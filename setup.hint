@@ -1,0 +1,8 @@
+category: Games
+requires: cygwin
+sdesc: "CLI Reversi game"
+ldesc: "Hinversi is a implementation of Reversi (a.k.a. Othello), a
+board game in the style of Go. It can support many frontends and
+backends, so you can select how clever your computer opponent is, and
+whether you like to play using the console or a GUI. You can also let
+one AI engine play against another one."

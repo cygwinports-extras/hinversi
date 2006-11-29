@@ -1,0 +1,112 @@
+hinversi
+------------------------------------------
+Hinversi is a implementation of Reversi (a.k.a. Othello), a board game
+in the style of Go. It can support many frontends and backends, so you
+can select how clever your computer opponent is, and whether you like to
+play using the console or a GUI. You can also let one AI engine play
+against another one.
+
+Runtime requirements:
+  cygwin-1.5.22-1
+
+Build requirements:
+  cygwin-1.5.22-1
+  binutils-20060817-1
+  cygport-0.2.6-1
+  doxygen-1.4.6-1
+  gcc-core-3.4.4-1
+  make-3.81-1
+
+Canonical homepage:
+  http://asturio.gmxhome.de/hinversi.html
+
+-------------------------------------------
+
+Build instructions:
+  unpack hinversi-0.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./hinversi-0.7-X.cygport all
+
+This will create:
+  /usr/src/hinversi-0.7-X-src.tar.bz2
+  /usr/src/hinversi-0.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cyghinversi.dll
+  /usr/bin/hinversi
+  /usr/bin/hinversi-cli.exe
+  /usr/include/hinversi/abClient.h
+  /usr/include/hinversi/aiManager.h
+  /usr/include/hinversi/naiv-client.h
+  /usr/include/hinversi/othello.h
+  /usr/include/hinversi/ringbuf.h
+  /usr/include/hinversi/simpleClient.h
+  /usr/lib/libhinversi.dll.a
+  /usr/lib/pkgconfig/hinversi.pc
+  /usr/share/doc/Cygwin/hinversi-0.7.README
+  /usr/share/doc/hinversi-0.7/COPYING
+  /usr/share/doc/hinversi-0.7/ChangeLog
+  /usr/share/doc/hinversi-0.7/README
+  /usr/share/doc/hinversi-0.7/TODO
+  /usr/share/doc/hinversi-0.7/html/abClient_8c.html
+  /usr/share/doc/hinversi-0.7/html/abClient_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/abClient_8h.html
+  /usr/share/doc/hinversi-0.7/html/aiManager_8c.html
+  /usr/share/doc/hinversi-0.7/html/aiManager_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/aiManager_8h.html
+  /usr/share/doc/hinversi-0.7/html/annotated.html
+  /usr/share/doc/hinversi-0.7/html/doxygen.css
+  /usr/share/doc/hinversi-0.7/html/doxygen.png
+  /usr/share/doc/hinversi-0.7/html/files.html
+  /usr/share/doc/hinversi-0.7/html/functions.html
+  /usr/share/doc/hinversi-0.7/html/functions_vars.html
+  /usr/share/doc/hinversi-0.7/html/globals.html
+  /usr/share/doc/hinversi-0.7/html/globals_defs.html
+  /usr/share/doc/hinversi-0.7/html/globals_func.html
+  /usr/share/doc/hinversi-0.7/html/globals_type.html
+  /usr/share/doc/hinversi-0.7/html/globals_vars.html
+  /usr/share/doc/hinversi-0.7/html/gtkgui_8c.html
+  /usr/share/doc/hinversi-0.7/html/hierarchy.html
+  /usr/share/doc/hinversi-0.7/html/human-cli_8c.html
+  /usr/share/doc/hinversi-0.7/html/human-cli_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/human-cli_8h.html
+  /usr/share/doc/hinversi-0.7/html/index.html
+  /usr/share/doc/hinversi-0.7/html/main_8c.html
+  /usr/share/doc/hinversi-0.7/html/main_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/main_8h.html
+  /usr/share/doc/hinversi-0.7/html/naiv-client_8c.html
+  /usr/share/doc/hinversi-0.7/html/naiv-client_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/naiv-client_8h.html
+  /usr/share/doc/hinversi-0.7/html/othello_8c.html
+  /usr/share/doc/hinversi-0.7/html/othello_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/othello_8h.html
+  /usr/share/doc/hinversi-0.7/html/ringbuf_8c.html
+  /usr/share/doc/hinversi-0.7/html/ringbuf_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/ringbuf_8h.html
+  /usr/share/doc/hinversi-0.7/html/simpleClient_8c.html
+  /usr/share/doc/hinversi-0.7/html/simpleClient_8h-source.html
+  /usr/share/doc/hinversi-0.7/html/simpleClient_8h.html
+  /usr/share/doc/hinversi-0.7/html/structs__board.html
+  /usr/share/doc/hinversi-0.7/html/tab_b.gif
+  /usr/share/doc/hinversi-0.7/html/tab_l.gif
+  /usr/share/doc/hinversi-0.7/html/tab_r.gif
+  /usr/share/doc/hinversi-0.7/html/tabs.css
+
+------------------
+
+Port Notes:
+
+----- version 0.7-1 -----
+Version bump.
+
+----- version 0.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
