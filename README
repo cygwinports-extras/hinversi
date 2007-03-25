@@ -7,15 +7,20 @@ play using the console or a GUI. You can also let one AI engine play
 against another one.
 
 Runtime requirements:
-  cygwin-1.5.22-1
+  cygwin-1.5.24-2
 
 Build requirements:
-  cygwin-1.5.22-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.6-1
-  doxygen-1.4.6-1
-  gcc-core-3.4.4-1
+  cygport-0.2.11-1
+  doxygen-1.5.1-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://asturio.gmxhome.de/hinversi.html
@@ -23,22 +28,21 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack hinversi-0.7.1-X-src.tar.bz2
+  unpack hinversi-0.7.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./hinversi-0.7.1-X.cygport all
+  cygport ./hinversi-0.7.2-X.cygport all
 
 This will create:
-  /usr/src/hinversi-0.7.1-X-src.tar.bz2
-  /usr/src/hinversi-0.7.1-X.tar.bz2
+  /usr/src/hinversi-0.7.2-X-src.tar.bz2
+  /usr/src/hinversi-0.7.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/bin/cyghinversi.dll
-  /usr/bin/hinversi
+  /usr/bin/cyghinversi-0.dll
   /usr/bin/hinversi-cli.exe
   /usr/include/hinversi/abClient.h
   /usr/include/hinversi/aiManager.h
@@ -46,60 +50,60 @@ Files included in the binary package:
   /usr/include/hinversi/othello.h
   /usr/include/hinversi/ringbuf.h
   /usr/include/hinversi/simpleClient.h
+  /usr/lib/libhinversi.a
   /usr/lib/libhinversi.dll.a
-  /usr/lib/pkgconfig/hinversi.pc
-  /usr/share/doc/Cygwin/hinversi-0.7.1.README
-  /usr/share/doc/hinversi-0.7.1/COPYING
-  /usr/share/doc/hinversi-0.7.1/ChangeLog
-  /usr/share/doc/hinversi-0.7.1/README
-  /usr/share/doc/hinversi-0.7.1/TODO
-  /usr/share/doc/hinversi-0.7.1/html/abClient_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/abClient_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/abClient_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/aiManager_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/aiManager_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/aiManager_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/annotated.html
-  /usr/share/doc/hinversi-0.7.1/html/doxygen.css
-  /usr/share/doc/hinversi-0.7.1/html/doxygen.png
-  /usr/share/doc/hinversi-0.7.1/html/files.html
-  /usr/share/doc/hinversi-0.7.1/html/functions.html
-  /usr/share/doc/hinversi-0.7.1/html/functions_vars.html
-  /usr/share/doc/hinversi-0.7.1/html/globals.html
-  /usr/share/doc/hinversi-0.7.1/html/globals_defs.html
-  /usr/share/doc/hinversi-0.7.1/html/globals_func.html
-  /usr/share/doc/hinversi-0.7.1/html/globals_type.html
-  /usr/share/doc/hinversi-0.7.1/html/globals_vars.html
-  /usr/share/doc/hinversi-0.7.1/html/gtkgui_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/hierarchy.html
-  /usr/share/doc/hinversi-0.7.1/html/human-cli_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/human-cli_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/human-cli_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/index.html
-  /usr/share/doc/hinversi-0.7.1/html/main_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/main_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/main_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/naiv-client_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/naiv-client_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/naiv-client_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/othello_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/othello_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/othello_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/ringbuf_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/ringbuf_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/ringbuf_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/simpleClient_8c.html
-  /usr/share/doc/hinversi-0.7.1/html/simpleClient_8h-source.html
-  /usr/share/doc/hinversi-0.7.1/html/simpleClient_8h.html
-  /usr/share/doc/hinversi-0.7.1/html/structs__board.html
-  /usr/share/doc/hinversi-0.7.1/html/tab_b.gif
-  /usr/share/doc/hinversi-0.7.1/html/tab_l.gif
-  /usr/share/doc/hinversi-0.7.1/html/tab_r.gif
-  /usr/share/doc/hinversi-0.7.1/html/tabs.css
+  /usr/lib/libhinversi.la
+  /usr/lib/pkgconfig/libhinversi.pc
+  /usr/share/doc/Cygwin/hinversi-0.7.2.README
+  /usr/share/doc/hinversi-0.7.2/AUTHORS
+  /usr/share/doc/hinversi-0.7.2/COPYING
+  /usr/share/doc/hinversi-0.7.2/ChangeLog
+  /usr/share/doc/hinversi-0.7.2/INSTALL
+  /usr/share/doc/hinversi-0.7.2/NEWS
+  /usr/share/doc/hinversi-0.7.2/README
+  /usr/share/doc/hinversi-0.7.2/TODO
+  /usr/share/doc/hinversi-0.7.2/html/abClient_8c.html
+  /usr/share/doc/hinversi-0.7.2/html/abClient_8h-source.html
+  /usr/share/doc/hinversi-0.7.2/html/abClient_8h.html
+  /usr/share/doc/hinversi-0.7.2/html/aiManager_8c.html
+  /usr/share/doc/hinversi-0.7.2/html/aiManager_8h-source.html
+  /usr/share/doc/hinversi-0.7.2/html/aiManager_8h.html
+  /usr/share/doc/hinversi-0.7.2/html/annotated.html
+  /usr/share/doc/hinversi-0.7.2/html/doxygen.css
+  /usr/share/doc/hinversi-0.7.2/html/doxygen.png
+  /usr/share/doc/hinversi-0.7.2/html/files.html
+  /usr/share/doc/hinversi-0.7.2/html/functions.html
+  /usr/share/doc/hinversi-0.7.2/html/functions_vars.html
+  /usr/share/doc/hinversi-0.7.2/html/globals.html
+  /usr/share/doc/hinversi-0.7.2/html/globals_defs.html
+  /usr/share/doc/hinversi-0.7.2/html/globals_func.html
+  /usr/share/doc/hinversi-0.7.2/html/globals_type.html
+  /usr/share/doc/hinversi-0.7.2/html/globals_vars.html
+  /usr/share/doc/hinversi-0.7.2/html/index.html
+  /usr/share/doc/hinversi-0.7.2/html/naiv-client_8c.html
+  /usr/share/doc/hinversi-0.7.2/html/naiv-client_8h-source.html
+  /usr/share/doc/hinversi-0.7.2/html/naiv-client_8h.html
+  /usr/share/doc/hinversi-0.7.2/html/othello_8c.html
+  /usr/share/doc/hinversi-0.7.2/html/othello_8h-source.html
+  /usr/share/doc/hinversi-0.7.2/html/othello_8h.html
+  /usr/share/doc/hinversi-0.7.2/html/ringbuf_8c.html
+  /usr/share/doc/hinversi-0.7.2/html/ringbuf_8h-source.html
+  /usr/share/doc/hinversi-0.7.2/html/ringbuf_8h.html
+  /usr/share/doc/hinversi-0.7.2/html/simpleClient_8c.html
+  /usr/share/doc/hinversi-0.7.2/html/simpleClient_8h-source.html
+  /usr/share/doc/hinversi-0.7.2/html/simpleClient_8h.html
+  /usr/share/doc/hinversi-0.7.2/html/structs__board.html
+  /usr/share/doc/hinversi-0.7.2/html/tab_b.gif
+  /usr/share/doc/hinversi-0.7.2/html/tab_l.gif
+  /usr/share/doc/hinversi-0.7.2/html/tab_r.gif
+  /usr/share/doc/hinversi-0.7.2/html/tabs.css
 
 ------------------
 
 Port Notes:
+
+----- version 0.7.2-1 -----
+Version bump.
 
 ----- version 0.7.1-1 -----
 Version bump.
