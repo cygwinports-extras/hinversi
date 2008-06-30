@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin
+requires: cygwin libintl8
 sdesc: "Reversi game engine"
 ldesc: "Hinversi is a implementation of Reversi (a.k.a. Othello), a
 board game in the style of Go. It can support many frontends and

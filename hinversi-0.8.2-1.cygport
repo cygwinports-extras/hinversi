@@ -1,0 +1,5 @@
+DESCRIPTION="Reversi game engine"
+HOMEPAGE="http://asturio.gmxhome.de/software/hinversi/i.html"
+SRC_URI="http://asturio.gmxhome.de/software/${PN}/${P}.tar.gz"
+
+DIFF_EXCLUDES="m4"
